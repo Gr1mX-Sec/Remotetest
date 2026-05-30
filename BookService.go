@@ -24,6 +24,7 @@ func NewBookService() *BookService {
 
 // AddBook 添加书籍
 func (s *BookService) AddBook(book Book) {
+	fmt.Println("【dev分支测试】书籍服务已启动") 
 	s.bookStore[book.ID] = book
 	fmt.Printf("[BookService] 已添加书籍：《%s》（作者：%s）\n", book.Title, book.Author)
 }
